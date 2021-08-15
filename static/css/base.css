@@ -21,6 +21,7 @@ body {
 
 .logo-font {
     text-transform: uppercase;
+    color: orangered;
 }
 
 .main-logo-link {
@@ -28,7 +29,7 @@ body {
 }
 
 .shop-now-button {
-    background: black;
+    background: orangered;
     color: white;
     min-width: 260px;
 }
@@ -66,7 +67,7 @@ body {
     top: 0;
     left: 0;
     position: fixed;
-    background: orange;
+    background: #ebecf0;
     z-index: -1;
 }
 
@@ -91,5 +92,15 @@ body {
 
     .header-container {
         padding-top: 164px;
+    }
+}
+
+/* pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+    body {
+        height: calc(100vh - 116px);
     }
 }
