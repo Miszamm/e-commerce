@@ -9,7 +9,7 @@ from .models import Product, Category
 
 
 def all_products(request):
-    """A view to shaw all products, including sorting and search queries"""
+    """ A view to shaw all products, including sorting and search queries """
 
     products = Product.objects.all()
     query = None
@@ -59,7 +59,7 @@ def all_products(request):
 
 
 def product_detail(request, product_id):
-    """A view to show indidvidual product details"""
+    """ A view to show indidvidual product details """
 
     product = get_object_or_404(Product, pk=product_id)
 
