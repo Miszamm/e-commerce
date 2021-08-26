@@ -84,7 +84,7 @@ body {
     z-index: -1;
 }
 
-a.category-badge > spa.badge:hover {
+a.category-badge > span.badge:hover {
     background: orangered !important;
     color: #fff !important;
 }
