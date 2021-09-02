@@ -120,6 +120,7 @@ a.category-badge > span.badge:hover {
     height: 2px;
 }
 
+
 /* Convenience classes - colors copied from Bootstrap */
 .arrow-primary {
     border-bottom-color: #007bff !important;
