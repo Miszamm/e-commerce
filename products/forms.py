@@ -2,7 +2,7 @@ from django import forms
 from .models import Product, Category
 
 
-class ProductForm(forms.modelForm):
+class ProductForm(forms.ModelForm):
 
     class Meta:
         model = Product
