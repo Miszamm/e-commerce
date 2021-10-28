@@ -122,16 +122,16 @@ WSGI_APPLICATION = 'e_commerce.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
-# }
-
 DATABASES = {
-    'default': dj_database_url.parse('postgres://zfgqxnqtrcrdjj:50a9b85c5d81fc19dd7a1fbdd5339defa40be9dcd1864ecafa2e1cbaf4da6829@ec2-52-209-171-51.eu-west-1.compute.amazonaws.com:5432/ddsduu3iaqtaj5')
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
 }
+
+# DATABASES = {
+#     'default': dj_database_url.parse('postgres://zfgqxnqtrcrdjj:50a9b85c5d81fc19dd7a1fbdd5339defa40be9dcd1864ecafa2e1cbaf4da6829@ec2-52-209-171-51.eu-west-1.compute.amazonaws.com:5432/ddsduu3iaqtaj5')
+# }
 
 
 # Password validation
